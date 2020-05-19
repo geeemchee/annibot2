@@ -107,7 +107,7 @@ bot.command('/edit', async (ctx) => {
         const m = new UserDetails(id, msg, null, 1)
         const userid = ctx.chat.id;
         console.log('edit mode -> m', m)
-        const test = await queries.checkDateMonthById(userid, m);
+        //const test = await queries.checkDateMonthById(userid, m);
         //console.log(test)
         console.log(userid);
         await queries.updateDateMonthById(userid, m);
